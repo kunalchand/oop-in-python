@@ -21,7 +21,25 @@ class Animal:
 
 # Subclass Dog
 
+
+class Dog(Animal):
+    def __init__(self, name, sound):
+        super().__init__(name, sound)
+
+    def wag_tail(self):
+        print(self.name + " *wags tail aggressively*")
+        super().make_sound()
+
 # Subclass Cat
+
+
+class Cat(Animal):
+    def __init__(self, name, sound):
+        super().__init__(name, sound)
+
+    def purr(self):
+        print(self.name + " *purrs aggressively*")
+        super().make_sound()
 
 
 # Create instances
